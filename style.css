@@ -1,0 +1,695 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0F0F0F;
+    font-family: "Poppins";
+}
+
+body p{
+    color: white;
+}
+
+body h1{
+    color: white;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.container{
+    height: auto;
+    width: 98%;
+}
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    padding: 20px 0px;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    z-index: 5;
+  }
+  
+  .navText {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+  
+  .navText a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-decoration: none;
+    color: white;
+  }
+  .navText p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  
+  .navLink {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navLink a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.48);
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .navLink a:hover {
+    color: white;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+  }
+
+
+  .HeroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 80vh;
+    width: 100%;
+  }
+
+  .HeroText{
+    padding: 0 0px;
+    gap:0;
+  }
+
+  .HeroText p{
+    color: #828282;
+    font-weight: 500;
+   
+  }
+  .HeroText p span{
+    color: #fff;
+    font-weight: 500;
+  }
+
+  @keyframes textBlink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+
+  }
+
+  .HeroSection h1{
+    color: white;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100%;
+  }
+
+  .HeroTextTwo p{
+    color: white;
+    font-size: 30px;
+  }
+
+  .HeroTextTwo p span{
+    color: #828282;
+    animation: textBlink;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+  }
+  
+
+.workSection {
+    padding: 0px 10px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid gray;
+}
+
+.workContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.workHeader {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.workHeader p {
+    margin: 0;
+    font-size: 30px;
+}
+
+.workListContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    justify-content: center;
+}
+
+.workBoxContainer {
+    width: 100%;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.workBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.workBox img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    gap: 12px;
+}
+
+.workBox:hover .view {
+    opacity: 1;
+}
+
+.workBox .view div{
+    display: flex;
+    padding: 10px 10px;
+    gap:8px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: rgba(242, 242, 242, 0.396);
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+.workBox .view{
+    text-decoration: none;
+    border: none;
+}
+
+.workText {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    gap: 20px;
+}
+
+.aboutHeader p{
+    color: white;
+    font-size: 30px;
+}
+
+.aboutInfo{
+    width: 60%;
+    height: auto;
+}
+
+.aboutInfo p{
+    font-size: 16px;
+}
+
+.aboutImg {
+    display: grid;
+    gap:10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+  }
+
+  .imgContainer{
+    width: 80%;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .imgContainer img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+    transition: 0.7s;
+  }
+
+  .imgContainer img:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    cursor: pointer;
+    scale: 1.2;
+    transition: 0.7s;
+  }
+
+
+  /* SKILLS AND EXPERIENCE SECTION */
+
+
+  .skillsExperienceSection {
+    padding: 20px;
+    height: auto;
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.skill, .experience {
+    margin-bottom: 20px;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.education {
+    margin-bottom: 20px;
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.skillHeader, .experienceHeader {
+    margin-bottom: 10px;
+    
+}
+
+.skillHeader p, .experienceHeader p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #828282;
+
+}
+
+.skillList   {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.experienceListContainer{
+    display: flex;
+    flex-direction: column;
+}
+.educationListContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.experienceList{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skillList p, .experienceList p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CONTACT SECTION */
+.contactSection{
+    height: 100%;
+    width: 100%;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    gap: 25px;
+}
+
+
+.contactHeader p{
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.contactInfo{
+    width: 50%;
+}
+
+.contactInfo p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.contactMail a{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    transition: 0.5s ease-in ;
+    -webkit-transition: 0.5s ease-in ;
+    -moz-transition: 0.5s ease-in ;
+    -ms-transition: 0.5s ease-in ;
+    -o-transition: 0.5s ease-in ;
+    text-decoration: none;
+}
+.contactMail a:hover{
+color: white ;
+ transition: 0.5s ease-in ;
+    -webkit-transition: 0.5s ease-in ;
+    -moz-transition: 0.5s ease-in ;
+    -ms-transition: 0.5s ease-in ;
+    -o-transition: 0.5s ease-in ;
+}
+
+.contactFooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding: 25px 0;
+}
+
+.contactName p{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.contactLink{
+    display: flex;
+    gap: 20px;
+}
+
+.contactLink a{
+    font-size: 16px ;
+    line-height: 19px;
+    color: #b3b3b3;
+    text-decoration: none;
+
+}
+
+.contactLink a:hover{
+    color: white ;
+     transition: 0.5s ease-in ;
+        -webkit-transition: 0.5s ease-in ;
+        -moz-transition: 0.5s ease-in ;
+        -ms-transition: 0.5s ease-in ;
+        -o-transition: 0.5s ease-in ;
+}
+
+@media (width <= 400px) {
+    .navText p {
+        display: none;
+      }
+      
+  .HeroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    padding: 90px 0;
+    width: 100%;
+  }
+
+
+      .HeroSection h1{
+        color: white;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 100%;
+        text-wrap: wrap;
+      }
+    
+      .HeroTextTwo p{
+        color: white;
+        font-size: 20px;
+        text-wrap: wrap;
+      }
+
+      .workHeader p {
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    .workListContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        justify-content: center;
+    }
+    .workBox img {
+        width: 100%;
+        height: 300px;
+        display: block;
+    }
+
+    
+.aboutHeader p{
+    color: white;
+    font-size: 18px;
+}
+
+.aboutInfo{
+    width: 100%;
+    height: auto;
+}
+.aboutImg {
+    display: grid;
+    gap:10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+
+  .imgContainer{
+    width: 90%;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .skill, .experience,.education {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+}
+
+.contactHeader p{
+    font-size: 18px;
+    line-height: unset;
+    font-weight: 600;
+}
+
+.contactInfo{
+    width: 100%;
+}
+
+.contactInfo p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+    
+}
+@media (400px <= width <= 780px) {
+    .navText p {
+        display: none;
+      }
+      
+  .HeroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    padding: 90px 0;
+    width: 100%;
+  }
+
+
+      .HeroSection h1{
+        color: white;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 100%;
+        text-wrap: wrap;
+      }
+    
+      .HeroTextTwo p{
+        color: white;
+        font-size: 22px;
+        text-wrap: wrap;
+      }
+
+      .workHeader p {
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    .workListContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        justify-content: center;
+    }
+    .workBox img {
+        width: 100%;
+        height: 300px;
+        display: block;
+    }
+
+    
+.aboutHeader p{
+    color: white;
+    font-size: 18px;
+}
+
+.aboutInfo{
+    width: 100%;
+    height: auto;
+}
+.aboutImg {
+    display: grid;
+    gap:10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+
+  .imgContainer{
+    width: 90%;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .skill, .experience,.education {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+}
+
+.contactHeader p{
+    font-size: 18px;
+    line-height: unset;
+    font-weight: 600;
+}
+
+.contactInfo{
+    width: 100%;
+}
+
+.contactInfo p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+    
+}
+
+
+@media (780px <= width <= 960px) {
+    .HeroSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 70vh;
+        width: 100%;
+      }
+
+      .workBox img {
+        width: 100%;
+        height: 350px;
+        display: block;
+    }
+
+    .imgContainer{
+        width: 90%;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .skill, .experience,.education {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+    }
+    
+}
